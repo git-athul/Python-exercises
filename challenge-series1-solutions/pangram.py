@@ -1,9 +1,13 @@
-# panagram.py
-# Panagram-checker
-
-print("A sentence that contains all letters of the alphabet is a panagram.")
+# pangram.py
+# Pangram-checker
 
 def pangram(string):
+    """
+    Checks whether a sentence is pangram or not.
+    A pangram contains all letters of the alphabet.
+    >>> pangram("the quick brown fox jumps over the lazy dog")
+    "Congratulations. It's a pangram."
+    """
     alphabets = "abcdefghijklmnopqrstuvwxyz"
 
     # Input string will be compared with all alphabets.
@@ -20,11 +24,8 @@ def pangram(string):
     return "Congratulations. It's a pangram."
 
 
-#manual-tester:
-#str = "the quick brown fox jumps over the lazy dog"
-
-str = input("Enter the pangram in small letters: ")
-print(pangram(str))
+string = input("Enter the pangram in small letters: ")
+print(pangram(string))
 
 
 
